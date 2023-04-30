@@ -1,12 +1,12 @@
 const auth1 = "github_pat_11A";
-const auth2 = "DULF4Y0cPNc34L";
-const auth3 = "wflzt_kjEqS1dc";
-const auth4 = "dSgCaAu4SWI9bu";
-const auth5 = "8wjYRUnWC1niX5";
-const auth6 = "Xr7xL4C7UZ7HUB";
-const auth7 = "E2k2tKHsw";
+const auth2 = "MT6AMI03ekYKBp";
+const auth3 = "CTwd4_Ie7tEdmI";
+const auth4 = "EcS6giahRYO3MP";
+const auth5 = "CW2BLejEX0RiVN";
+const auth6 = "Wjz0Jxv65ZT4NI";
+const auth7 = "3Ex8ZLUiz";
 
-const githubUrl = "https://api.github.com/repos/cuteeunji/cuteeunji.github.io";
+const githubUrl = "https://api.github.com/repos/shawn-kim96/shawn-kim96.github.io";
 
 var auth = auth1 + auth2 + auth3 + auth4 + auth5 + auth6 + auth7;
 loadComments();
