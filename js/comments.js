@@ -1,10 +1,10 @@
 const auth1 = "github_pat_11A";
-const auth2 = "MT6AMI03ekYKBp";
-const auth3 = "CTwd4_Ie7tEdmI";
-const auth4 = "EcS6giahRYO3MP";
-const auth5 = "CW2BLejEX0RiVN";
-const auth6 = "Wjz0Jxv65ZT4NI";
-const auth7 = "3Ex8ZLUiz";
+const auth2 = "MT6AMI0WyCbwOh";
+const auth3 = "LNLWQ_jKZvwsqQ";
+const auth4 = "df9uUgvJfPGtQ8";
+const auth5 = "TUP9ajrLct5NWo";
+const auth6 = "V9gMUMIEYMCYTN";
+const auth7 = "L7E0hIerj";
 
 const githubUrl = "https://api.github.com/repos/shawn-kim96/shawn-kim96.github.io";
 
