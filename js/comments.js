@@ -79,7 +79,7 @@ function registerComment() {
           body: JSON.stringify({
             title: name.value,
             body: msg.value,
-            labels: new Array(pwd.value,),
+            labels: new Array(pwd.value, "guest_book"),
           }),
         }
       ).then((res) => res.json())
