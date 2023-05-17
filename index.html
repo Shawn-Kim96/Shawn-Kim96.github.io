@@ -6,10 +6,6 @@
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-	<!-- jQuery Modal -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58535575-3"></script>
 	<script>
@@ -215,7 +211,6 @@
 	</div>
 </div>
 
-
 <!-- 갤러리 -->
 <div class="row animate-box">
 	<div style="height: auto; width: 80%; margin: auto;">
@@ -413,6 +408,12 @@
 	</div>
 </div>
 
+<div class="row animate-box" style="padding: 20px;text-align: center;">
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#attendRegisterModal">
+  참석의사 전달하기
+</button>
+</div>
+
 <div class="row animate-box" style="height: auto; width: 100%; margin: auto; border:0.7px solid rgba(82, 81, 81, 0.1);"></div>
 
 <div id="qbootstrap-countdown" style="padding: 7em 1;background-image: url(images/photo/bottom.jpg); background-position: center" data-section="wedding-day">
@@ -461,6 +462,51 @@
 	</div>
 </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="attendRegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+		<form name="attend_form">
+			<div class="modal-content">
+				<div class="modal-header">참석의사 전달하기</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label" for="inputDefault">구분</label>
+						<input type="hidden" name="attend_type" />
+						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
+							<button type="button" class="btn btn-default" data-type="husband">신랑측</button>
+							<button type="button" class="btn btn-default" data-type="wife">신부측</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="inputName">성함</label>
+						<input type="text" class="form-control" id="inputName" name="attend_name">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="inputDefault">참석인원</label>
+						<input type="text" class="form-control" id="inputDefault" name="attender">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="inputDefault">동행인</label>
+						<input type="text" class="form-control" id="inputDefault" name="attend_with_whom">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="inputDefault">식사여부</label>
+						<input type="text" class="form-control" id="inputDefault" name="attend_eat">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="inputDefault">전세버스 탑승위치</label>
+						<input type="text" class="form-control" id="inputDefault" name="attend_bus" placeholder="탑승하지 않으시는 분은 남겨주시지 않아도 됩니다.">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary btn-block">참석의사 전달하기</button>
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
 
 
 <!-- jQuery -->
@@ -558,6 +604,23 @@
 <script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script>
 <script type="text/javascript" src="js/photoswipe-gallery.js"></script>
 <script type="text/javascript" src="js/comments.js"></script>
+
+<script>
+	$(".btn-type-selector button").on("click", function() {
+		$(this).addClass("btn-primary").siblings().removeClass("btn-primary");
+		$("input[name='attend_type']").val($(this).data("type"));
+	});
+	$("form[name=attend_form]").on("submit", function(e){
+		e.preventDefault();
+		var attend_type = $("input[name='attend_type']").val();
+		var attend_name = $("input[name='attend_name']").val();
+		var attender = $("input[name='attender']").val();
+		var attend_with_whom = $("input[name='attend_with_whom']").val();
+		var attend_eat = $("input[name='attend_eat']").val();
+		var attend_bus = $("input[name='attend_bus']").val();
+		registerRsvp(attend_type, attend_name, attender, attend_with_whom, attend_eat, attend_bus);
+	});
+</script>
 </body>
 </html>
 
