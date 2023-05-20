@@ -119,14 +119,13 @@
 <div class="row animate-box" style="background-color:rgba(0, 0, 0, 0.1)">
 	<p style="font-size: 17px; text-align: center; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
 		<br/>
-		서울대입구역 허름한 족발집에서 처음 만나<br/>
-		가장 힘들 때 등대가 되어준 사람과<br/>
-		평생을 약속하고자 합니다.<br/><br/>
-		앞으로 인생에서 마주할 어려움도<br/>
-		함께라면 두렵지 않기에<br/>
-		손잡고 같이 헤쳐나가겠습니다.<br/><br/>
-		저희의 첫 걸음을<br/>
-		축복해주시면 감사하겠습니다.<br/><br/>
+		함께하는 모든 순간이 즐거워<br/> 
+		친구에서 연인이 되었고,<br/><br/>
+		함께라면 어떤 어려움도 <br/>
+		헤쳐나갈 수 있을 것이라는 확신으로<br/>
+		연인에서 부부가 되고자 합니다.<br/><br/>
+		평생의 동반자로 내딛는 저희의 첫 걸음을<br/>
+		함께 축복해주시면 감사드리겠습니다.<br/><br/>
 		김준성 · 김선진<small> 의 장남</small> 수현<br/>
 		김태완 · 이재민<small> 의 차녀</small> 은지<br/><br/>
 	</p>
@@ -370,7 +369,7 @@
 		</p>
 		<div class="row animate-box" style="padding: 20px;text-align: center;">
 			<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#attendRegisterModal">
-				<p style="font-size: 16px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.8)">참석의사 전달하기</p>
+				<p style="font-size: 16px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.8)">참석 의사 전달하기</p>
 			</button>
 		</div>
 	</div>
@@ -420,6 +419,7 @@
 		</div>
 	</div>
 </div>
+
 
 <div class="row animate-box">
 	<div style="height: auto; width: 80%; margin: auto;">
@@ -486,9 +486,15 @@
 		<form name="attend_form">
 			<div class="modal-content">
 				<div class="modal-header">
-					<p style="font-size: 16px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
-						참석의사 전달하기
-					</p></div>
+					<h5 class="modal-title" id="exampleModalLabel">
+						<p style="font-size: 16px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
+							참석 의사 전달
+						</p>
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 				<div class="modal-body">
 					<div class="form-group">
 						<label class="control-label" for="inputDefault">
@@ -502,7 +508,11 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label" for="inputName">성함</label>
+						<label class="control-label" for="inputName">
+							<p style="font-size: 16px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
+								성함
+							</p>
+						</label>
 						<input type="text" class="form-control" id="inputName" name="attend_name">
 					</div>
 					<div class="form-group">
@@ -510,19 +520,20 @@
 						<input type="text" class="form-control" id="inputDefault" name="attender">
 					</div>
 					<div class="form-group">
-						<label class="control-label" for="inputDefault">동행인</label>
-						<input type="text" class="form-control" id="inputDefault" name="attend_with_whom">
-					</div>
-					<div class="form-group">
 						<label class="control-label" for="inputDefault">식사 여부</label>
-						<input type="text" class="form-control" id="inputDefault" name="attend_eat">
+						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
+							<button type="button" class="btn btn-default" data-type="rsvp_food_yes">예정</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_food_no">안함</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_food_notsure">미정</button>
+						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label" for="inputDefault">대절 버스 탑승 여부</label>
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
-							<button type="button" class="btn btn-default" data-type="cityhall">대전 시청 1번출구</button>
-							<button type="button" class="btn btn-default" data-type="church">대전인동교회 주차장</button>
-							<button type="button" class="btn btn-default" data-type="nuclear">원자력연료회사 주차장</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_cityhall">대전 시청 1번출구</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_nuclear">원자력연료회사 주차장</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_church">대전인동교회 주차장</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_no">안함</button>
 						</div>
 					</div>
 				</div>
@@ -641,10 +652,9 @@
 		var attend_type = $("input[name='attend_type']").val();
 		var attend_name = $("input[name='attend_name']").val();
 		var attender = $("input[name='attender']").val();
-		var attend_with_whom = $("input[name='attend_with_whom']").val();
 		var attend_eat = $("input[name='attend_eat']").val();
 		var attend_bus = $("input[name='attend_bus']").val();
-		registerRsvp(attend_type, attend_name, attender, attend_with_whom, attend_eat, attend_bus);
+		registerRsvp(attend_type, attend_name, attender, attend_eat, attend_bus);
 	});
 </script>
 </body>

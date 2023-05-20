@@ -1534,8 +1534,8 @@ ol, ul {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #6f584a;
-  color: #fff;
+  background: #EFEFEF;
+  color: #000000;
   border: none !important;
   border: 2px solid transparent !important;
 }
