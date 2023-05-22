@@ -1873,7 +1873,7 @@ li {
 
 /* 갤러리 타입02 */
 .gallery_type02 {
-  text-align: top;
+  text-align: center;
 }
 
   .gallery_type02 li {
@@ -1893,7 +1893,7 @@ li {
 
 /* 갤러리 타입03 */
 .gallery_type03 {
-  text-align: top;
+  text-align: center;
 }
 
   .gallery_type03 .gallery-top .swiper-slide img {
