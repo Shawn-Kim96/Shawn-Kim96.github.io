@@ -543,7 +543,6 @@
 								참석인원
 							</p>
 						</label>
-						<input type="text" class="form-control" id="inputDefault" name="attender">
 					</div>
 					<div class="form-group">
 						<label class="control-label" for="inputDefault">
@@ -551,6 +550,7 @@
 								식사 여부
 							</p>
 						</label>
+						<input type="hidden" name="attend_eat" />
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="rsvp_food_yes">예정</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_food_no">안함</button>
@@ -563,6 +563,7 @@
 								대절 버스 탑승 여부
 							</p>
 						</label>
+						<input type="hidden" name="attend_bus" />
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="rsvp_bus_cityhall">대전 시청 1번출구</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_bus_nuclear">원자력연료회사 주차장</button>
