@@ -172,7 +172,7 @@ function registerRsvp(
       },
       body: JSON.stringify({
         title: `참석여부 : ${attend_name}`,
-        body: `구분 : ${attend_type}\n참석자 : ${attender}\n동반자 : ${attend_with_whom}\n식사 : ${attend_eat}\n버스 : ${attend_bus}`,
+        body: `구분 : ${attend_type}\n참석자 : ${attender}\n식사 : ${attend_eat}\n버스 : ${attend_bus}`,
         labels: ["rsvp"],
       }),
     })
@@ -182,7 +182,6 @@ function registerRsvp(
         $("input[name=attend_type]").val("");
         $("input[name=attend_name]").val("");
         $("input[name=attender]").val("");
-        $("input[name=attend_with_whom]").val("");
         $("input[name=attend_eat]").val("");
         $("input[name=attend_bus]").val("");
         $("#attendRegisterModal").modal("hide");
