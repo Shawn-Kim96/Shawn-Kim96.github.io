@@ -319,8 +319,8 @@
 			대전에서 대절 버스 3대를 운행합니다. <br/><br/>
 			
 			<b>인동교회 주차장</b>, 오후 1시 30분 출발 <br/>
-			<b>원자력연료회사 주차장</b>, 오후 1시 30분 출발 <br/>
-			<b>대전 시청역 1번 출구</b>, 오후 1시 30분 출발 <br/><br/>
+			<b>한전원자력연료 주차장</b>, 오후 1시 30분 출발 <br/>
+			<b>대전 시청역 1번 출구</b>, 오후 1시 20분 출발 <br/><br/>
 			
 			<b>&#8251; 대절 버스를 이용하실 분들은 사전에 신랑측에 연락 부탁드립니다.</b>
 
@@ -516,11 +516,11 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label class="control-label" for="inputDefault">
+						<label class="control-label" for="attend_type">
 							<p style="font-size: 14px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
 							구분</p>
 						</label>
-						<input type="hidden" name="attend_type" />
+						<input type="hidden" id="attend_type" name="attend_type" />
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="husband">신랑측</button>
 							<button type="button" class="btn btn-default" data-type="wife">신부측</button>
@@ -535,19 +535,20 @@
 						<input type="text" class="form-control" id="inputName" name="attend_name">
 					</div>
 					<div class="form-group">
-						<label class="control-label" for="inputDefault">
+						<label class="control-label" for="attender">
 							<p style="font-size: 14px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
 								참석인원
 							</p>
 						</label>
+						<input type="text" class="form-control" id="attender" name="attender">
 					</div>
 					<div class="form-group">
-						<label class="control-label" for="inputDefault">
+						<label class="control-label" for="attend_eat">
 							<p style="font-size: 14px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
 								식사 여부
 							</p>
 						</label>
-						<input type="hidden" name="attend_eat" />
+						<input type="hidden" id="attend_eat" name="attend_eat" />
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="rsvp_food_yes">예정</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_food_no">안함</button>
@@ -555,16 +556,16 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label" for="inputDefault">
+						<label class="control-label" for="attend_bus">
 							<p style="font-size: 14px; text-align: left; margin-bottom: 0px; color: rgba(0, 0, 0, 0.5)">
 								대절 버스 탑승 여부
 							</p>
 						</label>
-						<input type="hidden" name="attend_bus" />
+						<input type="hidden" id="attend_bus" name="attend_bus" />
 						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="rsvp_bus_cityhall">대전 시청 1번출구</button>
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_nuclear">원자력연료회사 주차장</button>
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_church">대전인동교회 주차장</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_nuclear">한전원자력연료 주차장</button>
+							<button type="button" class="btn btn-default" data-type="rsvp_bus_church">인동교회 주차장</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_bus_no">안함</button>
 						</div>
 					</div>

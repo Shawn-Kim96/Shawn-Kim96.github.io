@@ -156,7 +156,6 @@ function registerRsvp(
   attend_type,
   attend_name,
   attender,
-  attend_with_whom,
   attend_eat,
   attend_bus
 ) {
