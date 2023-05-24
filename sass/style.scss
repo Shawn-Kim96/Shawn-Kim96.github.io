@@ -1719,11 +1719,6 @@ h1, h2, h3, h4, h5, h6 {
 	height: 54px;
 	font-size: 18px;
 	font-weight: 300;
-  	&:active, &:focus {
-  		outline: none;
-		box-shadow: none;
-		border-color: $brand-primary;
-  }
 }
 
 .animate-box {

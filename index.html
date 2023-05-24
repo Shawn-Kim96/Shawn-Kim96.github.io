@@ -69,7 +69,7 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<link rel="stylesheet" href="css/style.css?v=20180722">
+	<link rel="stylesheet" href="css/style.css?v=230524">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -350,10 +350,8 @@
 		<p style="text-align: left;margin-top: 16px; font-size: 16px;">
 			축하의 마음으로 참석해주시는 모든 분들을 귀하게 모실 수 있도록 참석 의사를 전달 부탁드립니다.
 		</p>
-		<div class="row animate-box" style="padding: 20px;text-align: center;">
-			<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#attendRegisterModal">
-				<p style="font-size: 16px; margin-bottom: 0px; color: rgba(0, 0, 0, 0.8)">참석 의사 전달하기</p>
-			</button>
+		<div class="row animate-box g-cont" style="padding: 20px;text-align: center;">
+				<p class="btn btn-lg" data-toggle="modal" data-target="#attendRegisterModal" style="font-size: 16px; margin-bottom: 0px;">참석 의사 전달하기</p>
 		</div>
 	</div>
 </div>
@@ -521,7 +519,7 @@
 							구분</p>
 						</label>
 						<input type="hidden" id="attend_type" name="attend_type" />
-						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
+						<div class="btn-block btn-type-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="husband">신랑측</button>
 							<button type="button" class="btn btn-default" data-type="wife">신부측</button>
 						</div>
@@ -549,7 +547,7 @@
 							</p>
 						</label>
 						<input type="hidden" id="attend_eat" name="attend_eat" />
-						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
+						<div class="btn-block btn-eat-selector" role="group" aria-label="...">
 							<button type="button" class="btn btn-default" data-type="rsvp_food_yes">예정</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_food_no">안함</button>
 							<button type="button" class="btn btn-default" data-type="rsvp_food_notsure">미정</button>
@@ -561,12 +559,17 @@
 								대절 버스 탑승 여부
 							</p>
 						</label>
-						<input type="hidden" id="attend_bus" name="attend_bus" />
-						<div class="btn-group btn-block btn-type-selector" role="group" aria-label="...">
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_cityhall">대전 시청 1번출구</button>
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_nuclear">한전원자력연료 주차장</button>
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_church">인동교회 주차장</button>
-							<button type="button" class="btn btn-default" data-type="rsvp_bus_no">버스 안 탐</button>
+						<div class="radio">
+							<label><input type="radio" name="attend_bus" value="rsvp_bus_cityhall">대전 시청 1번출구</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="attend_bus" value="rsvp_bus_nuclear">한전원자력연료 주차장</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="attend_bus" value="rsvp_bus_church">인동교회 주차장</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="attend_bus" value="rsvp_bus_no">버스 안 탐</label>
 						</div>
 					</div>
 				</div>
@@ -680,13 +683,17 @@
 		$(this).addClass("btn-primary").siblings().removeClass("btn-primary");
 		$("input[name='attend_type']").val($(this).data("type"));
 	});
+	$(".btn-eat-selector button").on("click", function() {
+		$(this).addClass("btn-primary").siblings().removeClass("btn-primary");
+		$("input[name='attend_eat']").val($(this).data("type"));
+	});
 	$("form[name=attend_form]").on("submit", function(e){
 		e.preventDefault();
 		var attend_type = $("input[name='attend_type']").val();
 		var attend_name = $("input[name='attend_name']").val();
 		var attender = $("input[name='attender']").val();
 		var attend_eat = $("input[name='attend_eat']").val();
-		var attend_bus = $("input[name='attend_bus']").val();
+		var attend_bus = $("input[name='attend_bus']:checked").val();
 		registerRsvp(attend_type, attend_name, attender, attend_eat, attend_bus);
 	});
 </script>

@@ -39,7 +39,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #6f584a;
+  color: #595959;
   outline: none;
 }
 
@@ -94,7 +94,7 @@ ol, ul {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #qbootstrap-header .navbar-brand {
-    color: #6f584a !important;
+    color: #595959 !important;
   }
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -103,7 +103,7 @@ ol, ul {
     transition: 0.3s;
   }
   #qbootstrap-header #navbar li a:hover {
-    color: #6f584a !important;
+    color: #595959 !important;
   }
   #qbootstrap-header #navbar li a span:before {
     background: transparent !important;
@@ -111,7 +111,7 @@ ol, ul {
   #qbootstrap-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #6f584a !important;
+    color: #595959 !important;
   }
   #qbootstrap-header #navbar li.active a span:before {
     visibility: visible;
@@ -140,7 +140,7 @@ ol, ul {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6f584a;
+  background-color: #595959;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -193,7 +193,7 @@ ol, ul {
   top: 0;
 }
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
-  color: #6f584a;
+  color: #595959;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -202,12 +202,12 @@ ol, ul {
   transition: 0.3s;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #6f584a;
+  color: #595959;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #6f584a;
+  color: #595959;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -236,7 +236,7 @@ ol, ul {
   color: #adadad;
 }
 #qbootstrap-header .navbar-default .brand-slogan em {
-  color: #6f584a;
+  color: #595959;
   font-style: normal;
 }
 #qbootstrap-header a {
@@ -263,11 +263,11 @@ ol, ul {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #6f584a;
+  fill: #595959;
 }
 .section-heading h2 {
   font-size: 60px;
-  color: #6f584a;
+  color: #595959;
   display: block;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -617,7 +617,7 @@ ol, ul {
   letter-spacing: 2px;
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #6f584a !important;
+  background: #595959 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -633,7 +633,7 @@ ol, ul {
 #qbootstrap-couple h3 {
   font-size: 34px;
   font-family: "Clicker Script", cursive;
-  color: #6f584a;
+  color: #595959;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple h3 {
@@ -641,7 +641,7 @@ ol, ul {
   }
 }
 #qbootstrap-couple span {
-  color: #6f584a;
+  color: #595959;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 14px;
@@ -659,7 +659,7 @@ ol, ul {
   }
 }
 #qbootstrap-couple .amp-center .colored .svg {
-  fill: #6f584a;
+  fill: #595959;
 }
 
 .qbootstrap-bg {
@@ -778,7 +778,7 @@ ol, ul {
   z-index: 1;
 }
 .couple .desc h2 {
-  color: #6f584a;
+  color: #595959;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -926,7 +926,7 @@ ol, ul {
 .timeline-title {
   margin-top: 0;
   font-size: 34px;
-  color: #6f584a;
+  color: #595959;
   margin-bottom: 30px;
 }
 
@@ -989,7 +989,7 @@ ol, ul {
 }
 
 #qbootstrap-testimonials {
-  background: #6f584a;
+  background: #595959;
   z-index: 0;
 }
 #qbootstrap-testimonials .overlay {
@@ -1065,7 +1065,7 @@ ol, ul {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #6f584a;
+  background: #595959;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1181,7 +1181,7 @@ ol, ul {
 }
 .wedding-events .desc h3 {
   font-size: 40px;
-  color: #6f584a;
+  color: #595959;
   display: block;
   margin-bottom: 40px;
 }
@@ -1296,7 +1296,7 @@ ol, ul {
 #qbootstrap-started .btn {
   height: 54px;
   border: none !important;
-  background: #6f584a;
+  background: #595959;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1376,7 +1376,7 @@ ol, ul {
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #6f584a;
+  background: #595959;
 }
 #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
   position: absolute;
@@ -1402,7 +1402,7 @@ ol, ul {
   text-decoration: none;
 }
 .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
-  background: #6f584a;
+  background: #595959;
 }
 .qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
   outline: none;
@@ -1416,18 +1416,18 @@ ol, ul {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #6f584a;
+  color: #595959;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #6f584a;
+  background: #595959;
   transition: all .2s ease-out;
 }
 .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #6f584a;
+  background: #595959;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1534,14 +1534,14 @@ ol, ul {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #EFEFEF;
-  color: #000000;
+  background: #595959;
+  color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #6f584a;
+  background: #595959;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46;
@@ -1582,11 +1582,11 @@ ol, ul {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #6f584a;
+  background: #595959;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #6f584a;
+  background: #595959;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1604,11 +1604,11 @@ ol, ul {
   display: inline-block;
 }
 .social.social-box a {
-  background: #6f584a;
+  background: #595959;
   color: #fff;
 }
 .social.social-circle a {
-  background: #6f584a;
+  background: #595959;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1663,11 +1663,6 @@ ol, ul {
   height: 54px;
   font-size: 18px;
   font-weight: 300;
-}
-.form-control:active, .form-control:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #6f584a;
 }
 
 .js .animate-box {
