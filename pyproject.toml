@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "shawn-kim96-github-io"
+version = "0.1.0"
+description = ""
+authors = ["suhyun.kim <suhyun.kim@42dot.ai>"]
+readme = "README.md"
+packages = [{include = "shawn_kim96"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+pandas = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
