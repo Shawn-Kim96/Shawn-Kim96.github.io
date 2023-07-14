@@ -5,8 +5,9 @@ description = ""
 authors = ["Shawn-Kim96 <dun03191@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.8, <4.0"
 requests = "^2.31.0"
+pandas = "^2.0.3"
 
 [tool.poetry.dev-dependencies]
 
