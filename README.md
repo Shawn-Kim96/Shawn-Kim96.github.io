@@ -1,5 +1,5 @@
 
-# Wedding Invitation Website
+# Interactive Wedding Invitation Platform
 
 ## Overview
 This project is a responsive and interactive wedding invitation website built using **HTML**, **CSS**, **JavaScript**, and **Python**. It includes a system for automatically registering RSVP responses as GitHub Issues, categorizing them for better organization, and automating daily data collection for updates and notifications.
