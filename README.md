@@ -10,7 +10,7 @@ This project is a responsive and interactive wedding invitation website built us
 - **Daily Data Collection**: A Python script collects data from GitHub Issues daily, processes the responses, and uploads the data to Google Sheets.
 - **Stakeholder Notifications**: The system sends notifications to stakeholders when new RSVP responses are registered or updates are made.
 
-## Technologies Used
+## Skills
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python for data automation and GitHub API integration
 - **Data Organization**: GitHub Issues for managing RSVP responses
